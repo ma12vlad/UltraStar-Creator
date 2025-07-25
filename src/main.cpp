@@ -131,6 +131,13 @@ void initLanguage(QApplication &app, QTranslator &trContent, QTranslator &trQt, 
 		if(trQt.load(":/qt_pl.qm")) {
 			app.installTranslator(&trQt);
 		}
+	} else if (lang.language() == QLocale::Russian) {
+		if(trContent.load(":/UltraStar-Creator.ru.qm")) {
+			app.installTranslator(&trContent);
+		}
+		if(trQt.load(":/qt_ru.qm")) {
+			app.installTranslator(&trQt);
+		}
 	} else if (lang.language() == QLocale::Spanish) {
 		if(trContent.load(":/UltraStar-Creator.es.qm")) {
 			app.installTranslator(&trContent);

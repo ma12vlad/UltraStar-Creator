@@ -63,6 +63,7 @@ TRANSLATIONS = resources/UltraStar-Creator.de.ts \
 	resources/UltraStar-Creator.es.ts \
 	resources/UltraStar-Creator.fr.ts \
 	resources/UltraStar-Creator.pl.ts \
+	resources/UltraStar-Creator.ru.ts \
 	resources/UltraStar-Creator.pt.ts
 
 INCLUDEPATH += . \
