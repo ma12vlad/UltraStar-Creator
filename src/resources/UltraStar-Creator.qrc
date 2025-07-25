@@ -12,6 +12,8 @@
         <file>UltraStar-Creator.it.ts</file>
         <file>UltraStar-Creator.pl.qm</file>
         <file>UltraStar-Creator.pl.ts</file>
+        <file>UltraStar-Creator.ru.qm</file>
+        <file>UltraStar-Creator.ru.ts</file>
         <file>icons/background.png</file>
         <file>icons/balloon--arrow.png</file>
         <file>icons/bean.png</file>
@@ -310,6 +312,7 @@
         <file>qt_fr.qm</file>
         <file>qt_pl.qm</file>
         <file>qt_pt.qm</file>
+        <file>qt_ru.qm</file>
         <file>monty/back.png</file>
         <file>monty/happy.png</file>
         <file>monty/normal.png</file>
