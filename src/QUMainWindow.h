@@ -42,6 +42,7 @@ private slots:
 	void enableGerman();
 	void enableFrench();
 	void enablePolish();
+	void enableRussian();
 	void enablePortuguese();
 
 	void generateFreestyleTextFiles();
@@ -153,6 +154,7 @@ private:
 	QAction *enableGermanAction;
 	QAction *enableFrenchAction;
 	QAction *enablePortugueseAction;
+	QAction *enableRussianAction;
 	QAction *enablePolishAction;
 	QMenu *languageMenu;
 	QAction *aboutUltraStarCreatorAction;

@@ -214,6 +214,10 @@ void QUMainWindow::initMenuBar() {
 	enablePolishAction = new QAction(QIcon(":/languages/pl.png"), tr("&Polish"), this);
 	enablePolishAction->setCheckable(true);
 	connect(enablePolishAction, SIGNAL(triggered()), this, SLOT(enablePolish()));
+
+	enableRussianAction = new QAction(QIcon(":/languages/ru.png"), tr("&Russian"), this);
+	enableRussianAction->setCheckable(true);
+	connect(enableRussianAction, SIGNAL(triggered()), this, SLOT(enableRussian()));
 	
 	uiLanguageGroup = new QActionGroup(this);
 	uiLanguageGroup->addAction(enableEnglishAction);
@@ -222,6 +226,7 @@ void QUMainWindow::initMenuBar() {
 	uiLanguageGroup->addAction(enableFrenchAction);
 	uiLanguageGroup->addAction(enablePortugueseAction);
 	uiLanguageGroup->addAction(enablePolishAction);
+	uiLanguageGroup->addAction(enableRussianAction);
 	
 	languageMenu = menuBar()->addMenu(tr("&Language"));
 	languageMenu->addAction(enableEnglishAction);
@@ -230,6 +235,7 @@ void QUMainWindow::initMenuBar() {
 	languageMenu->addAction(enableFrenchAction);
 	languageMenu->addAction(enablePortugueseAction);
 	languageMenu->addAction(enablePolishAction);
+	languageMenu->addAction(enableRussianAction);
 	
 	// about menu
 	aboutUltraStarCreatorAction = new QAction(QIcon(":/icons/bean.png"), tr("&About UltraStar Creator"), this);
@@ -285,6 +291,8 @@ void QUMainWindow::initConfig() {
 	else if (lang == QLocale::German)
 		;//_menu->langDeBtn->setChecked(true);
 	else if (lang == QLocale::Polish)
+		;//_menu->langPlBtn->setChecked(true);
+	else if (lang == QLocale::Russian)
 		;//_menu->langPlBtn->setChecked(true);
 	else if (lang == QLocale::Spanish)
 		;//_menu->langEsBtn->setChecked(true);
@@ -1072,6 +1080,15 @@ void QUMainWindow::enableSpanish()
 }
 
 /*!
+ * Changes the application language to Russian.
+ */
+void QUMainWindow::enableRussian()
+{
+	enableRussianAction->setChecked(true);
+	changeLanguage("Russian");
+}
+
+/*!
  * Changes the application language to Portuguese.
  */
 void QUMainWindow::enablePortuguese()
@@ -1096,6 +1113,9 @@ void QUMainWindow::changeLanguage(QString language) {
 	} else if (language == "Polish") {
 		settings.setValue("language", QLocale(QLocale::Polish, QLocale::Poland).name());
 		translatedLanguage = tr("Polish");
+	} else if (language == "Russian") {
+		settings.setValue("language", QLocale(QLocale::Russian, QLocale::Russia).name());
+		translatedLanguage = tr("Russian");
 	} else if (language == "Spanish") {
 		settings.setValue("language", QLocale(QLocale::Spanish, QLocale::Spain).name());
 		translatedLanguage = tr("Spanish");

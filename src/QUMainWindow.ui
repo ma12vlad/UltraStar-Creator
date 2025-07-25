@@ -3145,6 +3145,24 @@ Before tapping, the lyrics need to meet the following requirements:
     <string notr="true"/>
    </property>
   </action>
+  <action name="actionRussian">
+    <property name="checkable">
+      <bool>true</bool>
+    </property>
+    <property name="enabled">
+      <bool>true</bool>
+    </property>
+    <property name="icon">
+      <iconset resource="resources/UltraStar-Creator.qrc">
+        <normaloff>:/languages/ru.png</normaloff>:/languages/ru.png</iconset>
+    </property>
+    <property name="text">
+      <string notr="true">Russian</string>
+    </property>
+    <property name="shortcut">
+      <string notr="true"/>
+    </property>
+  </action>
   <action name="actionCreate_Dummy_Songs">
    <property name="enabled">
     <bool>true</bool>
@@ -3269,6 +3287,15 @@ Before tapping, the lyrics need to meet the following requirements:
    <property name="text">
     <string>Spanish</string>
    </property>
+  </action>
+  <action name="actionRussian_2">
+    <property name="icon">
+      <iconset resource="resources/UltraStar-Creator.qrc">
+        <normaloff>:/languages/ru.png</normaloff>:/languages/ru.png</iconset>
+    </property>
+    <property name="text">
+      <string>German</string>
+    </property>
   </action>
   <action name="actionGerman_2">
    <property name="icon">
