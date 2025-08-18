@@ -1,3 +1,6 @@
+Этот репозиторий является форком оригинального UltraStar-Creator 
+[![UltraStar-Creator](https://github.com/UltraStar-Deluxe/UltraStar-Creator)]
+Информация представленная ниже относится к оригнальному репозиторию
 # UltraStar-Creator Development README
 
 [![Build](https://github.com/UltraStar-Deluxe/UltraStar-Creator/actions/workflows/main.yml/badge.svg)](https://github.com/UltraStar-Deluxe/UltraStar-Creator/actions/workflows/main.yml)
